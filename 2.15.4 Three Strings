@@ -1,0 +1,20 @@
+public class ThreeStrings extends ConsoleProgram
+{
+    public void run()
+    {
+        String firstString = readLine("First string? ");
+        String secondString = readLine("Second string? ");
+        String thirdString = readLine("Third string? ");
+        
+        String fullWord = firstString + secondString;
+        
+        if(fullWord.equals(thirdString)){
+            System.out.println(firstString + " + " + secondString + " is equal to " + thirdString + "!");
+        }
+        
+        else{
+            System.out.println(firstString + " + " + secondString + " is not equal to " + thirdString + "!");
+        }
+
+    }
+}
