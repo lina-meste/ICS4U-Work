@@ -1,0 +1,36 @@
+public class FindMinimum extends ConsoleProgram
+{
+    public void run()
+    {
+    
+    //Asks user for 3 numbers
+      int numOne = readInt("Enter first number: ");
+      
+      int numTwo = readInt("Enter second number: ");
+      
+      int numThree = readInt("Enter third number: ");
+      
+      
+      
+      //If first input is the minimum, it will print numOne
+      if(numOne <= numTwo && numOne <= numThree)
+      {
+          System.out.println(numOne);
+      }
+      
+      
+      //If second input is the minimum, it will print numTwo
+      else if(numTwo <= numOne && numTwo <= numThree)
+      {
+          System.out.println(numTwo);
+      }
+      
+      
+      //If third input is the minimum, it will print numThree
+      else
+      {
+          System.out.println(numThree);
+      }
+      
+      }
+}
